@@ -48,9 +48,9 @@ def _details(e):
         'Helium': He, 'Oganesson': Og
     }
 
-    display(dict1 | dict2 | dict3 ,target='result') #combining
+    display(dict1 | dict2 | dict3 ,target='result') #combining dictionaries
     merged_dictionary = {**dict1, **dict2, **dict3}
 
-    display(merged_dictionary, target='result')
+    display(merged_dictionary, target='result') #display result of merged dictionaries
 
 

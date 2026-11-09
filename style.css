@@ -1,0 +1,17 @@
+h2 {
+    color: #234D32;
+    font-size: 42px;
+    margin-bottom: 15px;
+    font-family: 'Franklin Gothic Medium';
+}
+
+body{
+    background-color: #F3F0E6;
+}
+
+.container{
+    opacity: 100px;
+    border: 5px solid rgb(108, 156, 192);
+    width: 700px;
+    text-align: left;
+}

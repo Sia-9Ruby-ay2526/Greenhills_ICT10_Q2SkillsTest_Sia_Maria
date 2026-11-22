@@ -5,28 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css">
     <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
-    <title>Skillstest</title>
+    <title>Seatwork 1: Atlas of Southeast Asia</title>
 
-     <!-- Bootstrap -->
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
 
 </head>
-<body>
+<body class="d-flex flex-column min-vh-100">
+
+<!-- Navbar -->
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <div class="container-fluid">
+
+        <a class="navbar-brand" href="index.html">My ICT Portfolio</a>
+
+        <div class="navbar-nav">
+            <a class="nav-link" href="index.html" id="project_link">Meet The Creator</a>
+            <a class="nav-link" href="sw1.html" id="project_link">Nickname Atlas</a>
+            <a class="nav-link" href="sk.html" id="project_link">Element Checker</a>
+            <a class="nav-link" href="pa2.html" id="project_link">School Club Members</a>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
     <form>
-            <div class="container p-4 mt-5 mb-5 rounded bg-white">
-                <div class="text-center">
-                    <h2>Periodic Table Information Finder</h2> <hr><br>
+        <div class="container p-4 mt-5 mb-5 rounded bg-white">
+
+            <div class="text-center">
+                <h1>The Atlas of Southeast Asia</h1> <hr><br>
+            </div>
+
+            <div class="row">
+
+                <!--Country Names-->
+                <div>
+                    <label for="countries">Enter a Southeast Asian Country</label> <br>
+                    <input type="text" class="form-control w-100" id="generate_nickname" placeholder="Enter a Country">  <br>
                 </div>
 
-        <div class="'row"></div>
-
-                <input type= "text" id="dictionary" placeholder="Enter a Nonmetal">
-                <input type="button" py-click="element_details" value="search">
+                <!--Buttons-->
+                <div>
+                    <button type="button" class="btn btn-success mt-3" py-click="generate_nickname">Reveal Nickname</button>
+                    <button type="button" class="btn btn-success mt-3" py-click="go_to_project">Return to My Project</button>
+                    <div id="result"></div>
+                </div>
+            </div>
+        </div>
     </form>
-    <div id="result"></div>
-    <py-script src="main.py"></py-script>
+
+    <py-script src="main1.py"></py-script>
+
 </body>
 </html>

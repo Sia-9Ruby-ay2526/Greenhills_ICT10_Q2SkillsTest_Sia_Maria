@@ -3,7 +3,8 @@
 from pyscript import display, document
 
 def element_details(e):
-    document.getElementById('result').innerHTML = ' '
+    document.getElementById('result').innerHTML = ''
+
     nonmental_elements = document.getElementById('dictionary').value.lower().strip()
 
     # Dictionaries setup with Element Name as the Key
@@ -31,16 +32,11 @@ def element_details(e):
         'helium': 'He', 'oganesson': 'Og'
     }
 
-    dict1 = atomic_mass
-    dict2 = atomic_number
-    dict3 = element_symbol
+    # Retrieving dictionary values
+    display(f"Element: {nonmental_elements}", target='result')
+    display(f"Atomic Mass: {atomic_mass.get(nonmental_elements)}", target='result')
+    display(f"Atomic Number: {atomic_number.get(nonmental_elements)}", target='result')
+    display(f"Element Symbol: {element_symbol.get(nonmental_elements)}", target='result')
 
-    # Combining dictionaries
-    display(dict1 | dict2 | dict3, target='result')
-
-    merged_dictionary = {**dict1, **dict2, **dict3}
-
-    #display dictionary 
-    display(merged_dictionary, target='result')
 
 
